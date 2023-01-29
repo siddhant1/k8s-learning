@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    env: Production
+    type: frontend
+spec:
+  containers:
+    - name: nginx-pod
+      image: nginx
+    - name: busybox
+      image: busybox
